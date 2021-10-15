@@ -323,7 +323,7 @@ KWin.Switcher {
                                 anchors.fill: parent
 
                                 property int modelIndex: index
-                                property int modelWId: windowId
+                                property variant modelWId: windowId
                                 property variant modelIcon: model.icon
                                 property bool isCloseable: closeable
                                 sourceComponent: {
