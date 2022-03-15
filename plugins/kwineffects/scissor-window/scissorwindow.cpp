@@ -178,9 +178,9 @@ ScissorWindow::ScissorWindow(QObject *, const QVariantList &)
     : Effect()
 {
     // 构建用于窗口圆角特效的着色器
-    m_shader = KWin::ShaderManager::instance()->generateShaderFromResources(KWin::ShaderTrait::MapTexture, QString(), "corner-mask.frag");
+    m_shader = KWin::ShaderManager::instance()->generateShaderFromFile(KWin::ShaderTrait::MapTexture, QString(), "corner-mask.frag");
     // 构建用于自定义窗口形状的着色器
-    m_fullMaskShader = KWin::ShaderManager::instance()->generateShaderFromResources(KWin::ShaderTrait::MapTexture, QString(), "full-mask.frag");
+    m_fullMaskShader = KWin::ShaderManager::instance()->generateShaderFromFile(KWin::ShaderTrait::MapTexture, QString(), "full-mask.frag");
 
     if (!m_shader->isValid()) {
         qWarning() << Q_FUNC_INFO << "Invalid fragment shader of corner mask";
