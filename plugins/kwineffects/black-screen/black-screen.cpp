@@ -44,7 +44,7 @@ BlackScreenEffect::~BlackScreenEffect()
     QDBusConnection::sessionBus().unregisterObject(QStringLiteral("/BlackScreen"));
 }
 
-void BlackScreenEffect::drawWindow(KWin::EffectWindow *w, int mask, QRegion region, KWin::WindowPaintData &data)
+void BlackScreenEffect::drawWindow(KWin::EffectWindow *w, int mask, const QRegion &region, KWin::WindowPaintData &data)
 {
     if (!m_activated) {
         effects->drawWindow(w, mask, region, data);
