@@ -94,7 +94,7 @@ if (KWIN_VERSION)
 endif()
 
 add_subdirectory(configures)
-set(DDE_KWIN_SUPPORTED_VERSION "5.21.5")
+set(DDE_KWIN_SUPPORTED_VERSION "5.24.3")
 if (${KWIN_VERSION} STRLESS ${DDE_KWIN_SUPPORTED_VERSION} OR  ${KWIN_VERSION} STREQUAL ${DDE_KWIN_SUPPORTED_VERSION})
     add_subdirectory(plugins)
     add_subdirectory(scripts)
