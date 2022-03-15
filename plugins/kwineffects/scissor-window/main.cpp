@@ -20,6 +20,6 @@
  */
 #include "scissorwindow.h"
 
-KWIN_EFFECT_FACTORY_SUPPORTED(ScissorWindowPluginFactory, ScissorWindow, "scissor-window.json", return ScissorWindow::supported();)
+KWIN_EFFECT_FACTORY_SUPPORTED(ScissorWindow, "scissor-window.json", return ScissorWindow::supported();)
 
 #include "main.moc"

@@ -21,7 +21,7 @@
 
 #include "multitasking.h"
 
-KWIN_EFFECT_FACTORY_SUPPORTED(MultitaskingPluginFactory, MultitaskingEffect, "multitasking.json", return true;)
+KWIN_EFFECT_FACTORY_SUPPORTED(MultitaskingEffect, "multitasking.json", return true;)
 K_EXPORT_PLUGIN_VERSION(KWIN_EFFECT_API_VERSION)
 
 #include "factory.moc"
